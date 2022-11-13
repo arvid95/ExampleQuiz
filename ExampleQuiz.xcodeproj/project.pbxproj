@@ -14,6 +14,10 @@
 		878A67162921356E004C460D /* ExampleQuizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878A67152921356E004C460D /* ExampleQuizTests.swift */; };
 		878A67202921356E004C460D /* ExampleQuizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878A671F2921356E004C460D /* ExampleQuizUITests.swift */; };
 		878A67222921356E004C460D /* ExampleQuizUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878A67212921356E004C460D /* ExampleQuizUITestsLaunchTests.swift */; };
+		878A672F29213700004C460D /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878A672E29213700004C460D /* QuestionView.swift */; };
+		878A673129213DB5004C460D /* QuizButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878A673029213DB5004C460D /* QuizButtonView.swift */; };
+		878A67A7292167CD004C460D /* QuestionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878A67A6292167CD004C460D /* QuestionData.swift */; };
+		878A67AB292168CA004C460D /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878A67AA292168CA004C460D /* GameModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		878A671B2921356E004C460D /* ExampleQuizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleQuizUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		878A671F2921356E004C460D /* ExampleQuizUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleQuizUITests.swift; sourceTree = "<group>"; };
 		878A67212921356E004C460D /* ExampleQuizUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleQuizUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		878A672E29213700004C460D /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		878A673029213DB5004C460D /* QuizButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizButtonView.swift; sourceTree = "<group>"; };
+		878A67A6292167CD004C460D /* QuestionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionData.swift; sourceTree = "<group>"; };
+		878A67AA292168CA004C460D /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +102,12 @@
 		878A67032921356E004C460D /* ExampleQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				878A67A92921689B004C460D /* Data */,
+				878A67A829216884004C460D /* Model */,
 				878A67042921356E004C460D /* ExampleQuizApp.swift */,
 				878A67062921356E004C460D /* ContentView.swift */,
+				878A672E29213700004C460D /* QuestionView.swift */,
+				878A673029213DB5004C460D /* QuizButtonView.swift */,
 				878A67082921356E004C460D /* Assets.xcassets */,
 				878A670A2921356E004C460D /* Preview Content */,
 			);
@@ -125,6 +137,22 @@
 				878A67212921356E004C460D /* ExampleQuizUITestsLaunchTests.swift */,
 			);
 			path = ExampleQuizUITests;
+			sourceTree = "<group>";
+		};
+		878A67A829216884004C460D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				878A67AA292168CA004C460D /* GameModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		878A67A92921689B004C460D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				878A67A6292167CD004C460D /* QuestionData.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +286,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				878A67072921356E004C460D /* ContentView.swift in Sources */,
+				878A672F29213700004C460D /* QuestionView.swift in Sources */,
+				878A67A7292167CD004C460D /* QuestionData.swift in Sources */,
 				878A67052921356E004C460D /* ExampleQuizApp.swift in Sources */,
+				878A673129213DB5004C460D /* QuizButtonView.swift in Sources */,
+				878A67AB292168CA004C460D /* GameModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

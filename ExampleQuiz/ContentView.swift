@@ -8,14 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject private var gameModel = GameModel()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationStack {
+            VStack {
+                Text("Welcome to the Quiz App!")
+                NavigationLink {
+                    QuestionView()
+                } label: {
+                    Label("Start", systemImage: "gamecontroller")
+                }
+                .padding()
+            }
+            .navigationTitle("Quiz")
         }
-        .padding()
+        .onAppear {
+            gameModel.loadQuestions()
+        }
     }
 }
 
